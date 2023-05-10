@@ -1,0 +1,9 @@
+<form action="/fetch" method="post">
+    {% csrf_token %}
+    <h3> did not match !! guess the number again</h3><br>
+    <h3>attempts : {{attempts}} of 3</h3>
+    <label for="guessed_number"> guess number:</label>
+    <input type="number" id="guessed_number" name="guessed_number"><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>

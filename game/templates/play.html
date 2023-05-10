@@ -1,0 +1,13 @@
+<form action="/play" method="post">
+  {% csrf_token %}
+  <label for="firstname"> Name:</label>
+  <input type="text" id="firstname" name="firstname"><br><br>
+  
+  <label for="email">email:</label>
+  <input type="email" id="email" name="email"><br><br>
+
+  <label for="guessed_number"> guess number:</label>
+  <input type="number" id="guessed_number" name="guessed_number"><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
